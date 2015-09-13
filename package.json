@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "name": "jesuis",
+  "description": "[![travis][travis-badge]][travis-url] [![git][git-badge]][git-url] [![npm][npm-badge]][npm-url]",
+  "version": "0.0.1",
+  "main": "jesuis.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "precommit": [
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aug2uag/jesuis"
+  },
+  "keywords": [
+    "JSON",
+    "key",
+    "value",
+    "search"
+  ],
+  "author": "aug2uag <info@aug2uag.com> (http://aug2uag.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aug2uag/jesuis/issues"
+  },
+  "homepage": "https://github.com/aug2uag/jesuis"
+}
