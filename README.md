@@ -20,7 +20,7 @@ npm install jesuis --save
 
 <a name="example"></a>
 ## Example
-Check out the [example.js][example] and [test.js][example] files for examples how to run. 
+Check out the [example.js][example] and [test.js][test] files for examples how to run. 
 ```js
 'use strict'
 
