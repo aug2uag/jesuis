@@ -3,12 +3,12 @@
     "underscore": "^1.8.3"
   },
   "name": "jesuis",
-  "description": "[![travis][travis-badge]][travis-url] [![git][git-badge]][git-url] [![npm][npm-badge]][npm-url]",
+  "description": "Library for JSON parsing based on value or object matching.",
   "version": "0.0.1",
   "main": "jesuis.js",
   "devDependencies": {},
   "scripts": {
-    "test": "node test.js"
+    "test": "npm install && node test.js && rm -rf node_modules"
   },
   "precommit": [
     "test"
