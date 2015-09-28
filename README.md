@@ -1,5 +1,4 @@
 # jesuis
-[![travis][travis-badge]][travis-url]
 [![git][git-badge]][git-url]
 [![npm][npm-badge]][npm-url]
 
@@ -20,15 +19,14 @@ npm install jesuis --save
 
 <a name="example"></a>
 ## Example
-Check out the [example.js][example] and [test.js][test] files for examples how to run. 
+Check out the [example.js][example] and [test.js][test] files for more examples. 
 ```js
-'use strict'
-
 var jesuis = require('jesuis');
 
 var y = {
 	a: 1,
-	b: [1,2]
+	b: [1,2],
+	c: [3,4,{b: true}]
 }
 
 jesuis.start(y, {b: true});
@@ -52,8 +50,6 @@ aug2uag © 2015, Licensed under [MIT][].
 [example]: ./example.js
 [test]: ./test.js
 
-[travis-badge]: https://img.shields.io/travis/aug2uag/jesuis.svg?style=flat-square
-[travis-url]: https://travis-ci.org/aug2uag/jesuis
 [git-badge]: https://img.shields.io/github/release/aug2uag/jesuis.svg?style=flat-square
 [git-url]: https://github.com/aug2uag/jesuis/releases
 [npm-badge]: https://img.shields.io/npm/v/jesuis.svg?style=flat-square
