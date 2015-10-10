@@ -2,20 +2,11 @@
 [![git][git-badge]][git-url]
 [![npm][npm-badge]][npm-url]
 
-Library for JSON parsing currently based on value or object matching. Input object and search term, outputs array with matches that contain lineage traces as state progressed during the search.
+Library for JSON parsing based on value or object matching. Outputs lineage trace as state progressed during search.
 
-* [Install](#install)
 * [Example](#example)
 * [Reading Output](#output)
-* [TODO](#todo)
 * [License](#license)
-
-<a name="install"></a>
-## Install
-
-```
-npm install jesuis --save
-```
 
 <a name="example"></a>
 ## Example
@@ -37,11 +28,54 @@ jesuis.start(y, {b: true});
 
 The outupt is written to ./tmp/jesuis.json file for accomodating drill-down analysis to identify the origin of the matched items. Lineage trace is stored per object in the `json[idx].ancestors` array, and that you may inspect for deciphering the origin of the JSON object the term was matched.
 
-## TODO
-
-- Add options for output
-- Expand functions/API
-- Optimize search
+The example above would generate the following output:
+```js
+[
+    {
+        "objectSearch": true,
+        "node": {
+            "b": true
+        },
+        "ancestors": [
+            "root",
+            {
+                "a": 1,
+                "b": [
+                    1,
+                    2
+                ],
+                "c": [
+                    3,
+                    4,
+                    {
+                        "b": true
+                    }
+                ]
+            },
+            [
+                1,
+                2
+            ],
+            [
+                3,
+                4,
+                {
+                    "b": true
+                }
+            ],
+            {
+                "b": true
+            }
+        ],
+        "matches": {
+            "b": true
+        },
+        "match": {
+            "b": true
+        }
+    }
+]
+```
 
 ## License
 aug2uag © 2015, Licensed under [MIT][].

@@ -61,5 +61,6 @@ setTimeout(function() {
         res = JSON.parse(res);
         assert.strictEqual('object', typeof res, 'typeof return should be array');
         assert.strictEqual(2, res.length, '2 matches should be returned');
+        deleteFolderRecursive();
     });
 }, 1000);
