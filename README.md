@@ -2,7 +2,7 @@
 [![git][git-badge]][git-url]
 [![npm][npm-badge]][npm-url]
 
-Library for JSON parsing based on value or object matching. Outputs lineage trace as state progressed during search.
+Library for JSON parsing based on object matching. Outputs lineage trace as state progressed during search.
 
 * [Example](#example)
 * [Reading Output](#output)
@@ -53,10 +53,6 @@ The example above would generate the following output:
                 ]
             },
             [
-                1,
-                2
-            ],
-            [
                 3,
                 4,
                 {
@@ -67,9 +63,6 @@ The example above would generate the following output:
                 "b": true
             }
         ],
-        "matches": {
-            "b": true
-        },
         "match": {
             "b": true
         }
