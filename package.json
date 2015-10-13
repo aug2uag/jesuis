@@ -8,7 +8,7 @@
   "main": "jesuis.js",
   "devDependencies": {},
   "scripts": {
-    "test": "npm install && node test.js && rm -rf node_modules"
+    "test": "node test.js"
   },
   "precommit": [
     "test"

@@ -1,6 +1,7 @@
 # jesuis
 [![git][git-badge]][git-url]
 [![npm][npm-badge]][npm-url]
+[![travis][travis-badge]][travis-url]
 
 Library for JSON parsing based on object matching. Outputs lineage trace as state progressed during search.
 
@@ -81,3 +82,5 @@ aug2uag © 2015, Licensed under [MIT][].
 [git-url]: https://github.com/aug2uag/jesuis/releases
 [npm-badge]: https://img.shields.io/npm/v/jesuis.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/jesuis
+[travis-badge]: https://img.shields.io/travis/aug2uag/jesuis.svg?style=flat-square
+[travis-url]: https://travis-ci.org/aug2uag/jesuis
