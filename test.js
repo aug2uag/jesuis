@@ -59,8 +59,10 @@ setTimeout(function() {
     fs.readFile(path, 'utf8', function(err, res) {
         assert.strictEqual(null, err, 'no error should exist to retrieve json');
         res = JSON.parse(res);
-        assert.strictEqual('object', typeof res, 'typeof return should be array');
+        assert.strictEqual('object', typeof res, 'typeof return should be object');
+        assert.strictEqual(true, res instanceof Array, 'object should be array');
         assert.strictEqual(2, res.length, '2 matches should be returned');
         deleteFolderRecursive();
+        process.exit(0);
     });
 }, 1000);
