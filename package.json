@@ -4,7 +4,7 @@
   },
   "name": "jesuis",
   "description": "Library for JSON parsing based on value or object matching.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "jesuis.js",
   "devDependencies": {},
   "scripts": {
